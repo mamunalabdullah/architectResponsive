@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 li{
     list-style: none;
@@ -12,4 +15,36 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* header area */
+header{
+    padding: 50px 0;
+    background-color: #D0D0D0;
+}
+.header{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo h4{
+    font-size: 45px;
+    color: #131313;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    margin-left: 35px;
+}
+.menu ul li a{
+    color: #424242;
+    font-size: 18px;
+}
+.banner{
+    width: 85%;
+    margin: 0 auto;
 }
