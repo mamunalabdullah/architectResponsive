@@ -111,6 +111,21 @@ header{
 }
 
 /* feature area */
+/* service area  */
+.service-area
+.service
+.service-content
+.service-title
+.service-description
+.service-items
+.service-item
+.service-img{
+
+}
+/* service area  */
+
+
+
 
 /* mobile device responsive */
 @media screen and (max-width: 575px) {
