@@ -112,18 +112,54 @@ header{
 
 /* feature area */
 /* service area  */
-.service-area
-.service
-.service-content
-.service-title
-.service-description
-.service-items
-.service-item
+.service-area{
+    margin: 30px 0;
+}
+.service{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.service-content{
+    width: 40%;
+}
+.service-title{
+    font-size: 45px;
+    color: #131313;
+    font-size: 800;
+    padding: 0 10px;
+    border-left: 5px solid #FF900E;
+}
+.service-description{
+    font-size: 16px;
+    color: #727272;
+    margin: 10px 0;
+}
+.service-item{
+    padding: 30px;
+    box-shadow: 5px 5px 15px #727272;
+    margin: 10px 0;
+}
+.service-item-title{
+    font-size: 20px;
+    color: #131313;
+    font-size: 600;
+}
+.service-item-description{
+    font-size: 16px;
+    color: #727272;
+}
 .service-img{
-
+    width: 50%;
+}
+.banner-btn span{
+    font-size: 65px;
+    font-weight: 800;
+    padding: 21px 0;
 }
 /* service area  */
-
 
 
 
@@ -159,6 +195,29 @@ header{
         font-size: 30px;
     }
     /* feature area */
+    /* service area  */
+    .service{
+        display: flex;
+    }
+    .service-content{
+        width: 50%;
+    }
+    .service-title{
+        font-size: 25px;
+    }
+    .service-description{
+        font-size: 16px;
+    }
+    .service-item-title{
+        font-size: 15px;
+    }
+    .service-item-description{
+        font-size: 10px;
+    }
+    .service-img{
+        width: 40%;
+    }
+    /* service area  */
 }
 /* tablet device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -192,4 +251,21 @@ header{
         font-size: 35px;
     }
     /* feature area */
+    /* service area  */
+    .service{
+        width: 80%;
+    }
+    .service-content{
+        width: 60%;
+    }
+    .service-item-title{
+        font-size: 15px;
+    }
+    .service-item-description{
+        font-size: 10px;
+    }
+    .service-img{
+        width: 30%;
+    }
+    /* service area  */
 }
