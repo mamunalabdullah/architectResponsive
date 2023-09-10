@@ -1,3 +1,4 @@
+/* common area  */
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-
+/* common area  */
 /* header area */
 header{
     padding: 50px 0;
@@ -58,7 +59,7 @@ header{
     font-size: 64px;
     color: #131313;
 }
-.banner-description{
+.banner-description, .feature-description{
     font-size: 16px;
     color: #727272;
     margin-top: 10px;
@@ -74,9 +75,46 @@ header{
 .banner-img{
     margin-top: 50px;
 }
+/* header area  */
+/* feature area */
+.feature-area{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-img{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.feature-content{
+    width: 40%;
+}
+.feature-title{
+    font-size: 45px;
+    color: #727272;
+}
+.bold{
+    font-weight: 800;
+    color: #131313;
+}
+.colorful{
+    color: #FF900E;
+    font-weight: 800;
+}
 
+/* feature area */
 
+/* mobile device responsive */
 @media screen and (max-width: 575px) {
+    /* header area  */
     .header{
         display: none;
     }
@@ -87,4 +125,56 @@ header{
         font-size: 15px;
         padding: 11px 12px;
     }
+    /* header area  */
+    /* feature area */
+    .feature{
+    flex-direction: column-reverse;
+    }
+    .feature-img{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .feature-content{
+        width: 80%;
+        text-align: center;
+    }
+    .feature-title{
+        font-size: 30px;
+    }
+    /* feature area */
+}
+/* tablet device responsive */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* header area  */
+    .header{
+        display: none;
+    }
+    .banner-title{
+        font-size: 40px;
+    }
+    .banner-btn{
+        font-size: 15px;
+        padding: 11px 12px;
+    }
+    /* header area  */
+    /* feature area */
+    .feature{
+    flex-direction: column-reverse;
+    }
+    .feature-img{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .feature-content{
+        width: 80%;
+        text-align: center;
+    }
+    .feature-title{
+        font-size: 35px;
+    }
+    /* feature area */
 }
